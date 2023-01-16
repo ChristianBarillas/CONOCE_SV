@@ -1,0 +1,195 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0px;
+  margin-top: 100px;
+  background-color: white;
+
+  /* Se va a cambiar despues  */
+}
+.contenedor {
+  background-color: white;
+  /* display: flex; justify-content: flex-end; */
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  margin-top: -100px;
+  text-align: end;
+  margin-bottom: 0px;
+  z-index: 100;
+  box-shadow: 0 0.1rem 0.2rem rgb(128, 122, 122);
+}
+
+/* adentro de la navegacion ponemos la navegacion de display inline block  */
+/* .navegacion {
+    margin-right: 35px;
+    display: inline-block;
+
+    border: 2px solid black; 
+
+}  */
+
+/* estamos creando y dandole caracteristica al contenedor de todos los enlaces  */
+
+.navegacion_enlace {
+  display: inline-block;
+  padding: 10px;
+  color: black;
+}
+/* dandole propiedad a mi logo en la barra de navegacion  */
+a > img {
+  width: 100px;
+  height: 100px;
+  float: left;
+
+  padding-left: 40px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* se esta seleccionando la etiqueta <a> para modificarla y quitarle el hipervinculo ademas de cambiarle el color */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* se usa para añadirle resaltado a nuestros enlaces o etiquetas */
+a:hover {
+  color: rgba(25, 25, 4, 0.7);
+}
+/* creando la animacion del resaltado (donde dice color ahi podemos dejarlo vacio y crear tra propiedad para configurar el color) */
+
+/* estamos llamando al color antes declarado en la parte de transition para ya no volverla hacer */
+
+a {
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Quitando los puntos de la lista  usar cuando se necesite quitar forzadamente las etiquetas li */
+
+/* li {
+
+    list-style-type: none;  
+
+} */
+
+/* posicionamiento de de contenido */
+.navegacion {
+  margin-right: 100px;
+  padding-top: 20px;
+}
+
+/* Header    box shadow es el border al rededor de las cajas pero tambien tenemos el text-shadow */
+
+header img {
+  width: -webkit-fill-available;
+  height: 500px;
+  object-fit: cover;
+
+  /* primer valor a cuanto ira la sombra a la derecha, segundo valor sombra hacia abajo, tercer valor opacidad de la sombra */
+  /* cuarto valor es el color */
+}
+
+/*  pagina home  */
+
+header span {
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* configuracion del contenedor flexible del body */
+
+.flex_item img {
+  height: 200px;
+  max-width: 100%;
+
+  display: block;
+  margin: auto;
+}
+
+.flex_container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+  border: 2px solid black;
+}
+
+.flex_item {
+  padding: 20px;
+  border: 1px solid black;
+  height: 400px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.item2 span {
+  font-size: 10px;
+  text-align: justify;
+}
+
+footer {
+  display: inline-block;
+  background-color: #ffffff62;
+  height: 750px;
+  width: 100%;
+  color: rgba(4, 4, 4, 0.706);
+  background-image: url("./img/Estero0.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footer_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: -webkit-fill-available;
+}
+
+.footer_text {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* 
+estilo del texto sobre la imagen de encabezado este span afecta las cajitas  */
+
+.texto1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* alineando texto etiquetas span que contine el texto */
+
+span h3 {
+  text-align: center;
+}
+
+span h4 {
+  text-align: center;
+}
+
+span h1 {
+  text-align: center;
+}
+
+span p {
+  text-align: justify;
+}
